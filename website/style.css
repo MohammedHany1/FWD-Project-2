@@ -1,0 +1,138 @@
+/* Start Global Variables */
+:root {
+    --padding-section: 100px;
+}
+/* End Global Variables */
+/* Start Global Rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Extra Small */
+@media (max-width: 767px) {
+    .container {
+        width: 92%;
+    }
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+body{
+    background: linear-gradient(rgb(223, 167, 65), rgb(173, 158, 129));
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#app{
+    display: grid;
+    height:100vh;
+    color: black;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.holder{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+}
+.headline {
+    padding-top: 25px;
+    font-size: 30px;
+    justify-content: center;
+    
+}
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    box-sizing: border-box;
+    padding: 0 15px;
+    display:block;
+    height: 60px;
+    width: 320px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    display: block;
+    height: fit-content;
+    padding: 10px 20px;
+    width: fit-content;
+    background: #3b4a6b;
+    color: white;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    cursor: pointer;
+}
+h1{
+    font-size: 36px;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+    text-align: center;
+    color: #aaa;
+    font-family: 'Oswald', sans-serif;
+
+} 
